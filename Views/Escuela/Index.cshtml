@@ -1,0 +1,16 @@
+﻿<!-- 
+    Para tener mejor seguridad al momento de ejecutar nuestro programa debemos especificar el modelo que queremos 
+    utilizar al momento de mostrar las propiedades del mismo.
+
+    Esto se puede lograr gracias al codigo razor que nos permite utilizar codigo c# en archivos html.
+-->
+
+@model Escuela
+
+@{
+    ViewData["Title"] = "Escuela page";
+}
+
+<h1>Escuela</h1>
+<h2>Nombre de escuela: @Model.Name</h2>
+<p><strong>Año de fundación: @Model.CreationDate</strong></p>
